@@ -1,5 +1,5 @@
-# wse-plugin-modulelimitpublishedstreambandwidth
-BanStreams is a module for [Wowza Streaming Engine™ media server software](https://www.wowza.com/products/streaming-engine) that can automatically disconnect RTMP sources that exceed a set bandwidth rate limit.
+# wse-plugin-limitpublishedstreambandwidth
+LimitStreamViewers is a module for [Wowza Streaming Engine™ media server software](https://www.wowza.com/products/streaming-engine) that can automatically disconnect RTMP sources that exceed a set bandwidth rate limit.
 
 ## Prerequisites
 
