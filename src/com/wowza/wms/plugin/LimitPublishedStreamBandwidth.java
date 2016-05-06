@@ -18,7 +18,7 @@ import com.wowza.wms.rtp.model.RTPSession;
 import com.wowza.wms.stream.IMediaStream;
 import com.wowza.wms.stream.IMediaStreamActionNotify;
 
-public class ModuleLimitPublishedStreamBandwidth extends ModuleBase implements IMediaStreamActionNotify
+public class LimitPublishedStreamBandwidth extends ModuleBase implements IMediaStreamActionNotify
 {
 	private class MonitorStream
 	{
