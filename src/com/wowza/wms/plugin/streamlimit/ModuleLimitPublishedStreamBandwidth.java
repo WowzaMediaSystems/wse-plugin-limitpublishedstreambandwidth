@@ -1,7 +1,8 @@
-/**
- * Wowza server software and all components Copyright 2006 - 2015, Wowza Media Systems, LLC, licensed pursuant to the Wowza Media Software End User License Agreement.
+/*
+ * This code and all components (c) Copyright 2006 - 2016, Wowza Media Systems, LLC. All rights reserved.
+ * This code is licensed pursuant to the Wowza Public License version 1.0, available at www.wowza.com/legal.
  */
-package com.wowza.wms.plugin;
+package com.wowza.wms.plugin.streamlimit;
 
 import java.util.Date;
 import java.util.Timer;
@@ -18,7 +19,7 @@ import com.wowza.wms.rtp.model.RTPSession;
 import com.wowza.wms.stream.IMediaStream;
 import com.wowza.wms.stream.IMediaStreamActionNotify;
 
-public class LimitPublishedStreamBandwidth extends ModuleBase implements IMediaStreamActionNotify
+public class ModuleLimitPublishedStreamBandwidth extends ModuleBase implements IMediaStreamActionNotify
 {
 	private class MonitorStream
 	{
