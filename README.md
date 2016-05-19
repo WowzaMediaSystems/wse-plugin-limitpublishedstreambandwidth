@@ -1,5 +1,5 @@
 # LimitPublishedStreamBandwidth
-LimitPublishedStreamBandwidth is a module for [Wowza Streaming Engine™ media server software](https://www.wowza.com/products/streaming-engine) that can automatically disconnect RTMP sources that exceed a set bandwidth rate limit.
+The ModuleLimitPublishedStreamBandwidth module for [Wowza Streaming Engine™ media server software](https://www.wowza.com/products/streaming-engine) automatically disconnects RTMP sources that exceed a set bandwidth rate limit.
 
 ## Prerequisites
 
@@ -7,9 +7,9 @@ Wowza Streaming Engine 4.0.0 or later is required.
 
 ## Usage
 
-This module allows you the ability to configure a maximum bitrate that, if exceeded, will disconnect any imposing clients.
+The ModuleLimitPublishedStreamBandwidth module enables you to configure a maximum bitrate for an application. When an RTMP stream is published to the configured application, it's bitrate is continuously monitored to ensure it stays within the set limit. If the stream bitrate exceeds the limit, it is disconnected.
 
-## API Reference
+## More resources
 
 [Wowza Streaming Engine Server-Side API Reference](https://www.wowza.com/resources/WowzaStreamingEngine_ServerSideAPI.pdf)
 
