@@ -22,4 +22,4 @@ To use the compiled version of this module, see [How to monitor bandwidth of pub
 ## License
 This code is distributed under the [Wowza Public License](https://github.com/WowzaMediaSystems/wse-plugin-limitpublishedstreambandwidth/blob/master/LICENSE.txt).
 
-![alt tag](http://wowzalogs.com/stats/githubimage.php?plugin=wse-plugin-modulelimitpublishedstreambandwidth)
+![alt tag](http://wowzalogs.com/stats/githubimage.php?plugin=wse-plugin-limitpublishedstreambandwidth)
