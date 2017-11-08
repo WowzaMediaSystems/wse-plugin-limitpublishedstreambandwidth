@@ -1,0 +1,5 @@
+Build 2
+	Fixed problem where monitor threads attached to rtpSessions were not being shut down
+	
+Build 1
+	Initial commit

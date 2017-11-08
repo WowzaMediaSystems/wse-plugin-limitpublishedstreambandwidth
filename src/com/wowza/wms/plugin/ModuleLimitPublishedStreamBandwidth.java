@@ -1,5 +1,5 @@
 /*
- * This code and all components (c) Copyright 2006 - 2016, Wowza Media Systems, LLC. All rights reserved.
+ * This code and all components (c) Copyright 2006 - 2017, Wowza Media Systems, LLC. All rights reserved.
  * This code is licensed pursuant to the Wowza Public License version 1.0, available at www.wowza.com/legal.
  */
 package com.wowza.wms.plugin;
@@ -109,7 +109,7 @@ public class ModuleLimitPublishedStreamBandwidth extends ModuleBase implements I
 		
 		sustained = appInstance.getProperties().getPropertyInt(PROP_NAME_PREFIX + "Sustained", sustained); // not used
 		
-		logger.info(MODULE_NAME + " MaxBitrate: " + maxBitrate, WMSLoggerIDs.CAT_application, WMSLoggerIDs.EVT_comment);
+		logger.info(MODULE_NAME + " Build #2. MaxBitrate: " + maxBitrate, WMSLoggerIDs.CAT_application, WMSLoggerIDs.EVT_comment);
 	}
 
 	public void onStreamCreate(IMediaStream stream)
@@ -124,9 +124,6 @@ public class ModuleLimitPublishedStreamBandwidth extends ModuleBase implements I
 
 	public void onUnPublish(IMediaStream stream, String streamName, boolean isRecord, boolean isAppend)
 	{
-		if(stream.getClient() == null)
-			return;
-		
 		WMSProperties props = stream.getProperties();
 
 		MonitorStream monitor;
@@ -161,7 +158,7 @@ public class ModuleLimitPublishedStreamBandwidth extends ModuleBase implements I
 		WMSProperties props = stream.getProperties();
 		synchronized(props)
 		{
-			props.put("monitor", monitor);
+			props.setProperty("monitor", monitor);
 		}
 		monitor.start();
 	}
