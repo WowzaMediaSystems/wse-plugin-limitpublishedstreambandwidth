@@ -117,11 +117,6 @@ public class ModuleLimitPublishedStreamBandwidth extends ModuleBase implements I
 		stream.addClientListener(this);
 	}
 
-	public void onStreamDestroy(IMediaStream stream)
-	{
-		stream.removeClientListener(this);
-	}
-
 	public void onUnPublish(IMediaStream stream, String streamName, boolean isRecord, boolean isAppend)
 	{
 		WMSProperties props = stream.getProperties();
